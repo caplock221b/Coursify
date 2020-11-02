@@ -89,11 +89,13 @@ nav {
   transform: scaleX(0);
 }
 
-.nav-li:hover {
+.nav-li:hover,
+.nav-li:focus {
   color: var(--clr-blue);
 }
 
-.nav-li:hover::after {
+.nav-li:hover::after,
+.nav-li:focus::after {
   transform: scale(1);
 }
 
@@ -159,11 +161,13 @@ nav {
   color: var(--clr-white);
   background-color: var(--clr-red);
   margin: 2em var(--mr-head);
+  opacity: 1;
   transition: transform 250ms;
 }
 
-.ask:hover {
-  transform: translate(5px, -5px);
+.ask:hover,
+.ask:focus {
+  transform: scale(1.1);
 }
 
 .askDoubts > .video > .outer,
@@ -566,6 +570,11 @@ img {
   padding: 1em 2em;
   margin: auto var(--mr-tail);
   cursor: pointer;
+  transition: transform 250ms;
+}
+
+.explore > .content > div:hover {
+  transform: translateY(-5px);
 }
 
 .explore > .content > div > img {
@@ -677,6 +686,12 @@ img {
   padding: 2em 2em;
   background-color: white;
   cursor: pointer;
+  transition: transform 250ms;
+}
+
+.books > .content > div:hover,
+.stateBoards > .content > div:hover {
+  transform: translateY(-5px);
 }
 
 .books > .content > div > img,

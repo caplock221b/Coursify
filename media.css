@@ -519,6 +519,15 @@
 }
 
 @media (max-width: 400px) {
+  :root {
+    --video-outer-width: 324px;
+    --video-outer-height: 216px;
+    --video-inner-width: 288px;
+    --video-inner-height: 180px;
+    --play-height: 40px;
+    --play-width: 40px;
+  }
+
   .solveDoubts > .content > div > .sub {
     width: 20ch;
   }
@@ -561,5 +570,9 @@
 
   .review > p {
     text-align: center;
+  }
+
+  .review > .wrapper > .content::before {
+    top: -50px;
   }
 }
