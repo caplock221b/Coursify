@@ -1,0 +1,565 @@
+@media (max-width: 1232px) {
+  :root {
+    --font-head: 2.5rem;
+    --font-mid: 1.8rem;
+    --font-tail: 1rem;
+
+    --mr-head: 4em;
+    --mr-mid: 3em;
+    --mr-tail: 2em;
+
+    --bubble-width: 800px;
+    --bubble-height: 450px;
+  }
+
+  .ask {
+    font-size: calc(var(--font-tail) * 1.2);
+  }
+}
+
+@media (max-width: 1210px) {
+  .askDoubts {
+    flex-direction: column;
+  }
+  .askDoubts > .content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .askDoubts > .content > p {
+    width: 30ch;
+  }
+
+  .shorts {
+    flex-direction: column;
+  }
+
+  .shorts > div {
+    margin-top: 2em;
+    width: 40ch;
+  }
+
+  .shorts > div > img {
+    width: 200px;
+    height: 200px;
+    margin-right: auto;
+  }
+
+  .shorts > div > .content > p {
+    font-size: var(--font-mid);
+  }
+
+  .shorts > div > .content > span {
+    font-size: var(--font-tail);
+  }
+
+  .solveDoubts {
+    flex-direction: column;
+  }
+
+  .solveDoubts > .content {
+    margin-right: 0;
+  }
+
+  .solveDoubts > .content > p {
+    text-align: center;
+  }
+
+  .solveDoubts > .content > div {
+    align-content: center;
+  }
+
+  .solveDoubts > .content > div > img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .solveDoubts > .content > div > .sub > p {
+    font-size: calc(var(--font-tail) * 2);
+  }
+  .solveDoubts > .content > div > .sub > span {
+    font-size: calc(var(--font-tail) * 1.5);
+  }
+
+  .howItWorks > p {
+    font-size: var(--font-mid);
+  }
+
+  .liveClasses > .wrapper {
+    flex-direction: column;
+  }
+
+  .liveClasses > .wrapper > .content {
+    margin-top: var(--mr-mid);
+    margin-left: 0;
+  }
+
+  .liveClasses > .wrapper > .content > div > img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .liveClasses > .wrapper > .content > div > .sub > p {
+    font-size: calc(var(--font-tail) * 2);
+  }
+
+  .liveClasses > .wrapper > .content > div > .sub > span {
+    font-size: calc(var(--font-tail) * 1.5);
+  }
+
+  .books > .sub {
+    width: 70ch;
+  }
+
+  .books > .sub > span,
+  .stateBoards > .sub > span {
+    font-size: calc(var(--font-tail) * 1.5);
+  }
+
+  .jee > .content {
+    flex-direction: column;
+  }
+
+  .jee > .content > .sub {
+    margin-top: var(--mr-head);
+    width: 60ch;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .jee > .content > .sub > p {
+    font-size: calc(var(--font-mid) * 1.2);
+    margin-bottom: 0.8em;
+  }
+
+  .jee > .content > .sub > span {
+    font-size: calc(var(--font-tail) * 1.5);
+  }
+
+  .tutors > .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tutors > .content > div,
+  .review > .wrapper > .content {
+    width: 70ch;
+  }
+
+  .tutors > .content > div > .sub > p,
+  .review > .wrapper > .content > .sub > p {
+    font-size: var(--font-mid);
+  }
+
+  .tutors > .content > div > .sub > span,
+  .review > .wrapper > .content > .sub > span {
+    font-size: calc(var(--font-tail) * 1.2);
+  }
+
+  .review > .wrapper {
+    flex-direction: column;
+  }
+
+  .review > .wrapper > .content {
+    margin-top: calc(var(--mr-mid) * 2);
+    margin-left: 0;
+  }
+
+  .review > .wrapper > .content::before {
+    top: -70px;
+  }
+}
+
+@media (max-width: 1086px) {
+  .explore > .content {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .explore > .content > div > img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .books > .content,
+  .stateBoards .content {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .howItWorks > .content > div > img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 886px) {
+  :root {
+    --font-head: 2rem;
+    --font-mid: 1.6rem;
+    --font-tail: 0.8rem;
+
+    --mr-head: 3.5em;
+    --mr-mid: 2.6em;
+    --mr-tail: 1.8em;
+
+    --bubble-width: 600px;
+    --bubble-height: 400px;
+  }
+
+  nav {
+    align-items: center;
+  }
+
+  .logo {
+    font-size: calc(var(--font-mid) * 1.2);
+  }
+
+  .nav-ul {
+    flex-direction: column;
+    margin-top: 1em;
+    padding-top: 1em;
+    width: 100%;
+    background-color: var(--clr-white);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1;
+    transition: transform 250ms;
+    transform-origin: top;
+    transform: scaleY(0);
+  }
+
+  .nav-ul.show {
+    display: flex;
+    transform: scaleY(1);
+  }
+
+  .nav-li {
+    font-size: calc(var(--font-tail) * 1.6);
+    margin-left: 0;
+    margin-bottom: 1.2em;
+  }
+
+  .hamburger {
+    margin-left: auto;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+  }
+
+  .hamburger > .ham {
+    background-color: var(--clr-grey);
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .ham::before,
+  .ham::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    background-color: var(--clr-grey);
+    border-radius: 10px;
+  }
+
+  .ham::before {
+    top: 16px;
+    left: 0;
+  }
+
+  .ham::after {
+    bottom: -8px;
+    left: 0;
+  }
+
+  .show {
+    display: flex;
+  }
+}
+
+@media (max-width: 822px) {
+  .howItWorks > .content > div > img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .explore > .content > div > span {
+    font-size: calc(var(--font-tail) * 1.5);
+  }
+
+  .books > .content,
+  .stateBoards .content {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .books > .content > div,
+  .stateBoards > .content > div {
+    padding: 2em 3em;
+  }
+
+  .books > .content > div > span,
+  .stateBoards > .content > div > span {
+    font-size: calc(var(--font-tail) * 1.5);
+  }
+}
+
+@media (max-width: 750px) {
+  header {
+    padding: 1em 3em;
+  }
+  .askDoubts > .content > p {
+    width: 18ch;
+    text-align: center;
+  }
+}
+
+@media (max-width: 712px) {
+  .howItWorks > .content > div > img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .tutors > .content > div,
+  .review > .wrapper > .content {
+    width: 50ch;
+  }
+}
+
+@media (max-width: 624px) {
+  :root {
+    --video-outer-width: 450px;
+    --video-outer-height: 300px;
+    --video-inner-width: 400px;
+    --video-inner-height: 250px;
+    --play-height: 60px;
+    --play-width: 60px;
+  }
+  .jee > .content > .video {
+    border-radius: 25px;
+  }
+
+  .howItWorks > .content > .arrow {
+    margin: auto var(--mr-tail);
+  }
+
+  .books > .sub,
+  .stateBoards > .sub {
+    width: 45ch;
+  }
+}
+
+@media (max-width: 624px) {
+  :root {
+    --font-head: 1.8rem;
+    --font-mid: 1.5rem;
+    --font-tail: 0.8rem;
+
+    --mr-head: 3em;
+    --mr-mid: 2.2em;
+    --mr-tail: 1.6em;
+
+    --bubble-width: 400px;
+    --bubble-height: 300px;
+  }
+
+  .shorts > div {
+    width: 30ch;
+  }
+
+  .shorts > div > img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .solveDoubts > .image > img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .solveDoubts > .content > div > img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .solveDoubts > .content > div > .sub > p {
+    font-size: var(--font-mid);
+  }
+  .solveDoubts > .content > div > .sub > span {
+    font-size: calc(var(--font-tail) * 1.2);
+  }
+
+  .liveClasses > .wrapper > .content > div > img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .liveClasses > .wrapper > .content > div > .sub > p {
+    font-size: var(--font-mid);
+  }
+
+  .liveClasses > .wrapper > .content > div > .sub > span {
+    font-size: calc(var(--font-tail) * 1.2);
+  }
+
+  .howItWorks {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .solveDoubts > .content > div > .sub {
+    width: 30ch;
+  }
+
+  .liveClasses > .wrapper > .content > div > .sub {
+    width: 30ch;
+  }
+
+  .jee > .content > .sub {
+    width: 45ch;
+  }
+
+  .jee > .content > .sub > p {
+    text-align: center;
+  }
+
+  .explore > p {
+    text-align: center;
+  }
+
+  .explore > .content {
+    gap: 1em;
+  }
+
+  .explore > .content > div {
+    margin: auto 0.2em;
+  }
+
+  .books > .content > div,
+  .stateBoards > .content > div {
+    padding: 1em 2em;
+  }
+
+  .books > .content > div > span,
+  .stateBoards > .content > div > span {
+    font-size: calc(var(--font-tail) * 1.4);
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --font-head: 1.6rem;
+    --font-mid: 1.4rem;
+    --font-tail: 0.7rem;
+
+    --mr-head: 2.5em;
+    --mr-mid: 2em;
+    --mr-tail: 1.5em;
+
+    --bubble-width: 0;
+    --bubble-height: 0;
+
+    --video-outer-width: 360px;
+    --video-outer-height: 240px;
+    --video-inner-width: 320px;
+    --video-inner-height: 200px;
+    --play-height: 48px;
+    --play-width: 48px;
+  }
+
+  .shorts > div {
+    width: 25ch;
+  }
+
+  .shorts > div > img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .tutors > .content > div,
+  .review > .wrapper > .content {
+    width: 40ch;
+    gap: 0.2em;
+  }
+
+  .tutors > .content > div > img,
+  .review > .wrapper > .content > img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 432px) {
+  .explore > .content > div > img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .books > .content > div > img,
+  .stateBoards > .content > div > img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 400px) {
+  .solveDoubts > .content > div > .sub {
+    width: 20ch;
+  }
+
+  .liveClasses > .wrapper > .content > div > .sub {
+    width: 20ch;
+  }
+
+  .jee > p {
+    text-align: center;
+  }
+
+  .jee > .content > .sub {
+    width: 30ch;
+  }
+
+  .jee > .content > .sub > p {
+    text-align: center;
+  }
+
+  .books > .content > div,
+  .stateBoards > .content > div {
+    padding: 1em 1em;
+  }
+
+  .books > .sub,
+  .stateBoards > .sub {
+    width: 25ch;
+  }
+
+  .tutors > .content > div,
+  .review > .wrapper > .content {
+    width: 35ch;
+  }
+
+  .tutors > .content > div > .sub,
+  .review > .wrapper > .content > .sub {
+    margin-left: 0.5em;
+  }
+
+  .review > p {
+    text-align: center;
+  }
+}
